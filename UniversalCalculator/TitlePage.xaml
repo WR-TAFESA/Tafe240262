@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Calculator.TitlePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button x:Name="mathGoToButton" Content="Maths Calculator" Margin="328,253,0,0" VerticalAlignment="Top" Click="mathGoToButton_Click"/>
+        <Button x:Name="mortgageGoToButton" Content="Mortgage Calculator" Margin="328,384,0,0" VerticalAlignment="Top" Click="mortgageGoToButton_Click"/>
+        <Button x:Name="currencyGoToButton" Content="Currency Converter" Margin="328,317,0,0" VerticalAlignment="Top" Click="currencyGoToButton_Click"/>
+        <Button x:Name="exitButton" Content="Exit" Margin="328,468,0,0" VerticalAlignment="Top" Width="104" Click="exitButton_Click"/>
+    </Grid>
+</Page>
