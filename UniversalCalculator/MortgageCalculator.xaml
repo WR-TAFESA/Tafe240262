@@ -8,7 +8,45 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="PaleVioletRed">
+    <Grid Background="Green" Margin="10">
 
-    </Grid>
+		
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="Mortgage Calculator" FontSize="24" FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+        <TextBlock Text="Principal borrow $:" Grid.Row="1" VerticalAlignment="Center"/>
+        <TextBox Name="PrincipalTextBox" Grid.Row="1" Margin="140,0,0,10" Width="200"/>
+
+        <TextBlock Text="Years:" Grid.Row="2" VerticalAlignment="Center"/>
+        <TextBox Name="YearsTextBox" Grid.Row="2" Margin="140,0,0,10" Width="200"/>
+
+        <TextBlock Text="and Months:" Grid.Row="3" VerticalAlignment="Center"/>
+        <TextBox Name="MonthsTextBox" Grid.Row="3" Margin="140,0,0,10" Width="200"/>
+
+        <TextBlock Text="Yearly Interest Rate:" Grid.Row="4" VerticalAlignment="Center"/>
+        <TextBox Name="InterestRateTextBox" Grid.Row="4" Margin="140,0,0,10" Width="200"/>
+
+        <TextBlock Text="Monthly Interest Rate:" Grid.Row="5" VerticalAlignment="Center"/>
+        <TextBox Name="MonthlyInterestRateTextBox" Grid.Row="5" Margin="140,0,0,10" Width="200" IsReadOnly="True"/>
+
+        <TextBlock Text="Monthly Repayment $:" Grid.Row="6" VerticalAlignment="Center"/>
+        <TextBox Name="MonthlyRepaymentTextBox" Grid.Row="6" Margin="140,0,0,10" Width="200" IsReadOnly="True"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="7" Margin="0,20,0,0">
+            <Button Content="Calculate" Width="100" Click="CalculateButton_Click"/>
+            <Button Content="Exit" Width="100" Margin="20,0,0,0" Click="ExitButton_Click"/>
+        </StackPanel>
+   
+
+	</Grid>
 </Page>
