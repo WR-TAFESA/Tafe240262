@@ -45,7 +45,7 @@ namespace Calculator
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
-			// TO DO - Close program
+			Application.Current.Exit(); // Closes application
 		}
 	}
 }
