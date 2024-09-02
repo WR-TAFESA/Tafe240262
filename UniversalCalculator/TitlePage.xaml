@@ -7,11 +7,17 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+	<Page.Resources>
+		<Style TargetType="Button">
+			<Setter Property="Height" Value="50"/>
+			<Setter Property="Width" Value="200"/>
+		</Style>
+	</Page.Resources>
+	
     <Grid>
-        <Button x:Name="mathGoToButton" Content="Maths Calculator" Margin="328,253,0,0" VerticalAlignment="Top" Click="mathGoToButton_Click"/>
-        <Button x:Name="mortgageGoToButton" Content="Mortgage Calculator" Margin="328,384,0,0" VerticalAlignment="Top" Click="mortgageGoToButton_Click"/>
-        <Button x:Name="currencyGoToButton" Content="Currency Converter" Margin="328,317,0,0" VerticalAlignment="Top" Click="currencyGoToButton_Click"/>
-        <Button x:Name="exitButton" Content="Exit" Margin="328,468,0,0" VerticalAlignment="Top" Width="104" Click="exitButton_Click"/>
+        <Button x:Name="mathGoToButton" Content="Maths Calculator" Margin="300,250,0,0" VerticalAlignment="Top" Click="mathGoToButton_Click"/>
+        <Button x:Name="mortgageGoToButton" Content="Mortgage Calculator" Margin="300,320,0,0" VerticalAlignment="Top" Click="mortgageGoToButton_Click"/>
+        <Button x:Name="currencyGoToButton" Content="Currency Converter" Margin="300,390,0,0" VerticalAlignment="Top" Click="currencyGoToButton_Click"/>
+        <Button x:Name="exitButton" Content="Exit" Margin="300,460,0,0" VerticalAlignment="Top" Click="exitButton_Click"/>
     </Grid>
 </Page>
