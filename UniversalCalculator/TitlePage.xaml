@@ -18,6 +18,7 @@
         <Button x:Name="mathGoToButton" Content="Maths Calculator" Margin="300,250,0,0" VerticalAlignment="Top" Click="mathGoToButton_Click"/>
         <Button x:Name="mortgageGoToButton" Content="Mortgage Calculator" Margin="300,320,0,0" VerticalAlignment="Top" Click="mortgageGoToButton_Click"/>
         <Button x:Name="currencyGoToButton" Content="Currency Converter" Margin="300,390,0,0" VerticalAlignment="Top" Click="currencyGoToButton_Click"/>
+	<Button x:Name="tripCalculatorButton" Content="Trip Calculator" Margin="300,390,0,0" VerticalAlignment="Top" Click="tripCalculator_Click"/>
         <Button x:Name="exitButton" Content="Exit" Margin="300,460,0,0" VerticalAlignment="Top" Click="exitButton_Click"/>
     </Grid>
 </Page>
