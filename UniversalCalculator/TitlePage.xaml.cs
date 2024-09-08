@@ -43,6 +43,12 @@ namespace Calculator
 			this.Frame.Navigate(typeof(MortgageCalculator)); // Goes to Mortgage Calculator
 		}
 
+  		private void TripCalculatorButton_Click(object sender, RoutedEventArgs e)
+		{
+  		  MessageBox.Show("Trip calculator C# code will be developed later");
+		}
+
+
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
 			Application.Current.Exit(); // Closes application
