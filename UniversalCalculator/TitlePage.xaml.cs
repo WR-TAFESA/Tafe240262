@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using System.Windows;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -43,9 +44,21 @@ namespace Calculator
 			this.Frame.Navigate(typeof(MortgageCalculator)); // Goes to Mortgage Calculator
 		}
 
+		private async void tripCalculator_Click(object sender, RoutedEventArgs e)
+		{
+			var dialogMessage = new MessageDialog("Trip calculator C# code will be developed later");
+
+
+			await dialogMessage.ShowAsync();
+
+		}
+
+
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
 			Application.Current.Exit(); // Closes application
 		}
+
+		
 	}
 }
